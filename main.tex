@@ -32,24 +32,26 @@ Prove that $P^2 R^n = S^n$.\\
 from table \ref{tab:24.11.9.5.14}
 \input{tables/table.tex}
 \begin{align}
-    x \brak{n} & = x\brak{0}r^{n}  
+    x \brak{n} & = x\brak{0}r^{n}u\brak{n}  
 \end{align}    
 Using \eqref{11024_gp_sum},
 \begin{align}
-    S = x\brak{0}\brak{\frac{r^{n+1}-1}{r-1}}u\brak{n} \label{24.11.9.5.14.1}
+    S &= x\brak{0}\brak{\frac{r^{n+1}-1}{r-1}}u\brak{n} \label{24.11.9.5.14.1} \\
+    S\brak{z} &= \frac{x\brak{0}}{\brak{1 - rz^{-1}}\brak{1 - z^{-1}}} 
 \end{align}
 
 \begin{align}
-    y\brak{n} &= \frac{1}{x\brak{0}} r^{-n}
+    y\brak{n} &= \frac{1}{x\brak{0}} r^{-n}u\brak{n}
 \end{align}
 
 Using \eqref{11024_gp_sum} and setting the first term as $\frac{1}{x\brak{0}}$ and common ratio as $r^{-1}$,
 \begin{align}
-    R = \frac{1}{x\brak{0}}\brak{\frac{1-r^{-\brak{n+1}}}{1-r^{-1}}} \label{24.11.9.5.14.2}
+    R &= \frac{1}{x\brak{0}}\brak{\frac{1-r^{-\brak{n+1}}}{1-r^{-1}}}u\brak{n} \label{24.11.9.5.14.2} \\
+    R\brak{z} &= \frac{\brak{x\brak{0}}^{-1}}{\brak{1 - \brak{rz}^{-1}}\brak{1 - z^{-1}}}
 \end{align}
 
 \begin{align}
-    P = \brak{x\brak{0}}^{n+1} r^{n(n+1)} \label{24.11.9.5.14.3}
+    P &= \brak{x\brak{0}}^{n+1} r^{\frac{n\brak{n+1}}{2}}u\brak{n} \label{24.11.9.5.14.3}     
 \end{align}
 by using eq \eqref{24.11.9.5.14.1}, eq \eqref{24.11.9.5.14.2} and eq \eqref{24.11.9.5.14.3} \\
 $P^2 R^n = S^n$.
@@ -57,14 +59,14 @@ $P^2 R^n = S^n$.
 \begin{figure}[ht]
    \centering
    \includegraphics[width=1\columnwidth]{figs/plot2.png}
-   \caption{Stem Plot of $x\brak{n} = \brak{2}3^{n} , x\brak{0} = 2$ and $r = 3$}
+   \caption{Stem Plot of $x\brak{n} = \brak{2}3^{n}u\brak{n} , x\brak{0} = 2$ and $r = 3$}
    \label{fig: 1.11.9.1.1}
 \end{figure}
 
 \begin{figure}[ht]
    \centering
    \includegraphics[width=1\columnwidth]{figs/plot3.png}
-   \caption{Stem Plot of $y\brak{n} = \brak{0.5}3^{-n} , x\brak{0} = 2$ and $r = 3$}
+   \caption{Stem Plot of $y\brak{n} = \brak{0.5}3^{-n}u\brak{n} , x\brak{0} = 2$ and $r = 3$}
    \label{fig: 1.11.9.1.1}
 \end{figure}
 
